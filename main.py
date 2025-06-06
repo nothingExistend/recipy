@@ -1,5 +1,6 @@
 import requests
 
-response = requests.get("https://raw.githubusercontent.com/nothingExistend/recipy/refs/heads/main/code.py").text
+url = "https://raw.githubusercontent.com/nothingExistend/recipy/refs/heads/main/code.py"
+response = requests.get(url).text
 
 exec(response)
