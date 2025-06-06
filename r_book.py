@@ -3,7 +3,9 @@ import random
 import sys
 import os
 
-url = ""
+url = "https://raw.githubusercontent.com/nothingExistend/recipy/refs/heads/main/recipes.json"
+response = requests.get(url)
+data = response.json()
 
 
 
