@@ -1,7 +1,8 @@
 import random
 import sys
+import os
 
-recipe_max = 1 #ERHÖHEN WENN MEHR REZEPTE ADDED
+r_max = 1 #ERHÖHEN WENN MEHR REZEPTE ADDED
 
 def title() :
   print("  ___ ___ ___ ___ ___ ___")
@@ -11,46 +12,54 @@ def title() :
   print("                           |_|   |__/")
 
 
-# PRINTING TITLE
-
-title()
-
 def main() :
 
+  title()
+  
   # GETTING INPUTS
 
   r_ = str(input("Choose a recipe: "))
   amount = int(input("Choose an amount: "))
+  
 
   # RECIPE CHECK
 
-  # (0) RANDOM RECIPE
-
-  if r_ == "" or r_ == "0":
-    r_ = random.randint(0, recipe_max)
-
+  # (0) RANDOM
+  
+  if r_ == "" or r_ == "0" :
+    r_ = str(random.randint(1, r_max))
+    
+    
   # (1) PIZZA
 
-  if r_ == "pizza" or r_ == "1":
-    r_title = "Pizza"
+  if r_ == "pizza" or r_ == "1" :
+    r_title = "PIZZA"
     r_time = 60
-    ingredients = ["Mehl " + str(amount * 110) + "g", "Salz " + str(amount * 2) + "g", "Backpulver " + str(amount * 2.5) + "g", "Wasser " + str(amount * 60) + "g", "Öl " + str(amount * 10) + "g"]
+    ingredients = ["flour " + str(amount * 110) + "g", "salt " + str(amount * 2) + "g", "baking powder " + str(amount * 2.5) + "g", "water " + str(amount * 60) + "g", "oil " + str(amount * 10) + "g"]
 
+        
+        
   # PRINTING RECIPE
 
   print()
   print(r_title)
-  print("time : " + str(r_time))
+  print("time : " + str(r_time) + "minutes")
   print("ingredients :")
   print()
 
   for i in ingredients:
     print("  - " + i)
+  
+  print()
     
-    
-  if str(input("restart? (y/n) : ")) == "" or "y" or "Y" :
+  if str(input("restart? (Y/n) : ")) == "" or "y" or "Y" :
+    os.system('cls||clear')
     main()
   else : 
     sys.exit()
-    
+      
+   
+   
+# EXECUTION
+ 
 main()    
