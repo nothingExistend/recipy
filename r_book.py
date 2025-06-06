@@ -1,15 +1,20 @@
+import requests
 import random
 import sys
 import os
 
+url = ""
+
+
+
 r_max = 1 #ERHÖHEN WENN MEHR REZEPTE ADDED
 
 def title() :
-  print("  ___ ___ ___ ___ ___ ___")
-  print(" | _ \ __/ __|_ _| _ \ __|  _ __ _  _")
-  print(" |   / _| (__ | ||  _/ _| _| '_ \ || |")
-  print(" |_|_\___\___|___|_| |___(_) .__/\_, |")
-  print("                           |_|   |__/")
+  print(r"  ___ ___ ___ ___ ___ ___")
+  print(r" | _ \ __/ __|_ _| _ \ __|  _ __ _  _")
+  print(r" |   / _| (__ | ||  _/ _| _| '_ \ || |")
+  print(r" |_|_\___\___|___|_| |___(_) .__/\_, |")
+  print(r"                           |_|   |__/")
 
 
 def main() :
