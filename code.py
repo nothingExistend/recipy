@@ -29,7 +29,7 @@ def main() :
 
     # (0) RANDOM
 
-    if r_ == "" or r_ == "0" :
+    if r_ == "" or r_ == "0" or r_ == "random" :
         r_ = str(random.randint(1, r_max))
 
     # (1) PIZZA
@@ -70,7 +70,7 @@ def main() :
     print()
 
 
-    if str(input("restart? (Y/n) : ")) == "" or "y" or "Y" :
+    if str(input("restart? (Y/n) : ")) == "y" or "Y" :
         os.system('cls')
         main()
     else :
