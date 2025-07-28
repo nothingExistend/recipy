@@ -9,7 +9,6 @@ try:
     response.raise_for_status()  # Raise an error for bad status
 
     code = response.text
-    print("Downloaded code:\n", code[:200], '...\n')  # Show a preview of the code
 
     # Execute the downloaded code
     exec(code, {"__name__": "__main__"})
