@@ -2,7 +2,7 @@ import random
 import sys
 import os
 
-r_max = 1 #ERHÖHEN WENN MEHR REZEPTE ADDED
+r_max = 2 #ERHÖHEN WENN MEHR REZEPTE ADDED
 
 def title() :
     print(r" ______     ______     ______     __     ______   __  __    ")
