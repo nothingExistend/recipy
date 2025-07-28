@@ -37,16 +37,16 @@ def main() :
     if r_ == "pizza" or r_ == "1" :
         r_title = "PIZZA"
         r_time = 60
-        ingr = ["flour " + str(amount * 110) + "g", "salt " + str(amount * 2) + "g", "baking powder " + str(amount * 2.5) + "g", "water " + str(amount * 60) + "g", "oil " + str(amount * 10) + "g"]
-        instr = ["mix solids in an container", "mix fluids in separate container", "mix mixes to get homogeneous dough", "split in portions, let them rest for 10 mins", "put toppings on", "oven for ~15 mins & 200°C"]
+        ingr = ["flour " + str(amount * 110) + "g", "salt " + str(amount * 2) + "g", "baking powder " + str(amount * 2.5) + "g", "water " + str(amount * 60) + "ml", "oil " + str(amount * 10) + "ml"]
+        instr = ["mix dry ingredients in a container", "mix fluids in a separate container", "mix mixes to get homogeneous dough", "split in portions, let them rest for 10 mins", "put toppings on", "oven for ~15 mins & 200°C"]
 
     # (2) PANCAKES
 
     if r_ == "pancake" or r_ == "pancakes" or r_ == "2" :
         r_title = "PANCAKES"
         r_time = 30
-        ingr = ["flour " + str(amount * 250) + "g", "egg " + str(amount * 1), "milk " + str(amount * 190) + "ml", "baking powder " + str(amount * 10) + "g", "oil " + str(amount * 30) + "g", "salt " + str(amount * 2.5) + "g"]
-        instr = ["mix solids in an container", "mix fluids in separate container", "mix mixes to get homogeneous dough", "split in portions, let them rest for 10 mins", "put toppings on", "oven for ~15 mins & 200°C"]
+        ingr = ["flour (sifted) " + str(amount * 250) + "g", "egg " + str(amount * 1), "milk " + str(amount * 350) + "ml", "baking powder " + str(amount * 10) + "g", "oil " + str(amount * 60) + "ml", "salt " + str(amount * 2.5) + "g"]
+        instr = ["mix dry ingredients in a container", "mix fluids in seperate container", "pour fluids in dry ingredient container", "mix fast until no clumps are left", "put a little bit oil in a pan", "put two scoops of dough in the pan", "when bubbles pop look whether underside is brown then turn on other side"]
 
     # (3) 
 
