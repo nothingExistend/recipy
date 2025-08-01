@@ -43,7 +43,7 @@ def main() :
     # (2) PANCAKES
 
     if r_ == "pancake" or r_ == "pancakes" or r_ == "2" :
-        r_title = "PANCAKES"
+        r_title = "PANCAKES (amount 1 = 2 portions)"
         r_time = 30
         ingr = ["flour (sifted) " + str(amount * 250) + "g", "egg " + str(amount * 1), "milk " + str(amount * 350) + "ml", "baking powder " + str(amount * 10) + "g", "oil " + str(amount * 60) + "ml", "salt " + str(amount * 2.5) + "g"]
         instr = ["mix dry ingredients in a container", "mix fluids in seperate container", "pour fluids in dry ingredient container", "mix fast until no clumps are left", "put a little bit oil in a pan", "put two scoops of dough in the pan", "when bubbles pop look whether underside is brown then turn on other side"]
