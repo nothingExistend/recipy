@@ -33,27 +33,28 @@ def main() :
 
     # RECIPE CHECK
 
+    match recipe
     # (0) RANDOM
 
-    if recipe in ["", "0", "random"]:
-        recipe = str(random.randint(1, r_max))
-
-    # (1) PIZZA
-
-    if recipe in ["pizza", "1"]:
-        r_title = "PIZZA"
-        r_time = 60
-        ingr = [f"flour {amount * 110} g", f"salt {amount * 2} g", f"baking powder {amount * 2.5} g", f"water {amount * 60} ml", f"oil {amount * 10} ml"]
-        instr = ["mix dry ingredients in a container", "mix fluids in a separate container", "mix mixes to get homogeneous dough", "split in portions, let them rest for 10 mins", "put toppings on", "oven for ~15 mins & 200°C"]
-
-    # (2) PANCAKES
-
-    if recipe in ["pancake", "pancakes", "2"]:
-        r_title = "PANCAKES (amount 1 = 2 portions)"
-        r_time = 30
-        ingr = [f"flour (sifted) {amount * 250} g", f"egg {amount * 1}", f"milk {amount * 350} ml", f"baking powder {amount * 10} g", f"oil {amount * 60} ml", f"salt {amount * 2.5} g"]
-        instr = ["mix dry ingredients in a container", "mix fluids in seperate container", "pour fluids in dry ingredient container", "mix fast until no clumps are left", "put a little bit oil in a pan", "put two scoops of dough in the pan", "when bubbles pop look whether underside is brown then turn on other side"]    
-        
+        case 0 | random:
+            recipe = str(random.randint(1, r_max))
+    
+        # (1) PIZZA
+    
+        case 1 | pizza:
+            r_title = "PIZZA"
+            r_time = 60
+            ingr = [f"flour {amount * 110} g", f"salt {amount * 2} g", f"baking powder {amount * 2.5} g", f"water {amount * 60} ml", f"oil {amount * 10} ml"]
+            instr = ["mix dry ingredients in a container", "mix fluids in a separate container", "mix mixes to get homogeneous dough", "split in portions, let them rest for 10 mins", "put toppings on", "oven for ~15 mins & 200°C"]
+    
+        # (2) PANCAKES
+    
+        case 2 | pancake | pancakes:
+            r_title = "PANCAKES (amount 1 = 2 portions)"
+            r_time = 30
+            ingr = [f"flour (sifted) {amount * 250} g", f"egg {amount * 1}", f"milk {amount * 350} ml", f"baking powder {amount * 10} g", f"oil {amount * 60} ml", f"salt {amount * 2.5} g"]
+            instr = ["mix dry ingredients in a container", "mix fluids in seperate container", "pour fluids in dry ingredient container", "mix fast until no clumps are left", "put a little bit oil in a pan", "put two scoops of dough in the pan", "when bubbles pop look whether underside is brown then turn on other side"]    
+            
     # PRINTING RECIPE
 
     print()
